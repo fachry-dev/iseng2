@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+hero{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar{
+    height: 12%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+.area-logo{
+    height:100%;
+    width: 20%;
+}
+ 
+.area-logo a{
+    text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: red;
+}
+.area-logo a h2{
+display: flexbox;
+justify-content: center;
+align-items: center;
+}
+
+.nav-item ul{
+   list-style: none;
+}
+.nav-item ul li{
+   display: inline;
+   margin: 12px;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: red;
+}
