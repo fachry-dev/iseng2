@@ -6,21 +6,28 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .logo{
-    display: flex;
+    display: block;
+    position: fixed;
+    justify-content: right;
     
 }
 .navbar{
-    height: 17%;
+    height: 12%;
     width: 100%;
-    background-color: transparent;
     position: fixed;
     z-index: 5;
     display: flex;
     align-items: center;
     background-color: #ffde00;
+    border-radius:300px;
+    bottom: 40px;
+    background: linear-gradient(to top left,#d2001a,#ffde00,#efefef);
+    animation: gradient 10s infinite alternate;
+
 }
 
 .nav-item ul{
@@ -33,31 +40,28 @@ margin-left: 530px;
 }
 .nav-item ul li a{
     text-decoration: none;
-    color: #d2001a;
+    color:#000000;
     font-size: 20px;
     font-family: "Inter";
     font-weight: 500;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .nav-item ul li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #d2001a;
     font-size: 20px;
     font-family:"Inter";
-    font-weight: 800;
+    transition: all;
 }
 
 .b-m{
-    background-repeat:no-repeat ;
-    background-attachment: fixed;
-    background-size:cover;
-    background-color: #efefef;
+background-color: #efefef;
 }
 .foto{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 40px;
     animation: bounce 0.8s infinite alternate   ;
 }
 h1{
@@ -110,31 +114,43 @@ h1{
             .btn-paket ul li{
                 background-color:#d2001a;
                 border: none;
-                border-radius: 20px;
+                border-radius: 16px;
                 color: #efefef;
-                padding: 16px 0;
+                padding: 8px 0;
                 margin-top: 8px;
                 margin-bottom: 12px;
+                transition: 1s;
                 }
+                .btn-paket ul li:hover{
+                    background-color:#ffde00;
+                    border: none;
+                    border-radius: 16px;
+                    color: #efefef;
+                    padding: 8px 0;
+                    margin-top: 8px;
+                    margin-bottom: 12px;
+
+                    }
 
                 .btn-paket ul li a{
                 text-decoration: none;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif               ;
-                color: #010110;
-                transition: 0.5s;
+                font-family:'inter';     
+                color: #ffde00;
+                transition: 1.5s;
                 font-weight: 500;
                 }
                 .btn-paket ul li a:hover{
                     text-decoration: none;
                     font-family:'Inter';
-                    color: #ffde00;
-                    font-weight: 800;
+                    color: #d2001a;
+                    font-weight: 900;
                     }
-        @keyframes bounce{
+        @keyframes bounce{ 
             from{
-            transform:translateY(0)  ;transform: scaleX(1);
+            transform:translateY(20px)  ;transform: scaleX(1);
             }to{
-            transform: translateY(-20px);
+            transform: translateY(-40px);
             }
         }
     
+        

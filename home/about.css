@@ -3,15 +3,18 @@
     margin: 0;
     padding: 0;
 }
+
 .about-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffde00;
+    background-color: #d2001a;
 }
 .about-text{
     font-size: 40px;
     margin: 0 250px;
     font-family: 'Inter';
     text-align: center;
+    color: #ffde00;
 }
+
